@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch</title>
+    <link rel="stylesheet" href="../public/stylesheets/create-product.css">
+</head>
+<body>
+    
+    <nav>
+        <h1>Scritch</h1>
+        <hr>
+    </nav>
+
+    <div class="container">
+
+        <aside>
+            
+            <ul id="ul-1">
+                <li>Create New Products</li>
+                <li>All Products</li>
+            </ul>
+
+        </aside>
+
+        <main>
+            
+            <div class="heading-font">
+                <h2>Create New Product</h2>
+                <h4>Product Details</h4>
+            </div>
+
+            <form action="/products/create" method="post" enctype="multipart/form-data" >
+                <div class="product-img">
+                    <p>Product Image</p>
+                    <input type="file" value="choose file" name="image">
+                </div>
+             
+                <div class="product-main">
+                    <input name="name" type="text" placeholder="Product Name" >
+                    <input name="price" type="text" placeholder="Product Price" >
+                    <input name="discount" type="text" placeholder="Discount Price" >
+                </div>
+    
+                <div class="panel-details">
+                   <h4>Panel Details</h4>
+                   <div class="product-colors">
+                    <input type="text" placeholder="Background Color" name="bgcolor">
+                    <input type="text" placeholder="Panel Color" name="panelcolor">
+                    <input type="text" placeholder="Text Color" name="textcolor">
+                   </div>
+                </div>
+    
+                <div class="create-btn">
+                    <button>Create New Product</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="../public/javascripts/create-product.js"></script>
+</body>
+</html>

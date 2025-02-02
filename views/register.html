@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Scritch</h1>
+    <div class="flash-msg">
+        <h4 id="msg">${error_msg}</h4>
+    </div>
+    <hr>
+<div class="container">
+    <div class="sub-container">
+        <div class="form-box">
+            <h2>Welcome to the <span>Scritch</span></h2>
+            <h3>Create Your Account</h3>
+            <form action="/register" method="post">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Enter Your Name" name="name" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="You'r secure Password " name="password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Create Account</button>
+
+                <p class="login-link">Already have an account? <a href="/login">Log in</a></p>
+            </form>
+        </div>
+    </div>
+    <aside >
+        <div class="image">
+            <h4>"Limited Time offer - Shop Before its Gone!"</h4>
+            <img src="../public/images/shoping.png"/>
+            <h3>"Claim Your Discount% Today..."</h3>
+        </div>
+    </aside>
+</div>
+    
+<script src="../public/javascripts/script.js"></script>
+</body>
+</html>
